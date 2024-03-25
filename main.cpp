@@ -6,24 +6,40 @@ void ex1(), ex2(), ex3(), ex4(), ex5(), ex6(), ex7(), ex8(), ex9(), ex10(), ex11
 
 int main()
 {
-    ex2();
+    ex1(), ex2(), ex3(), ex4(), ex5(), ex6(), ex7(), ex8(), ex9(), ex10(), ex11();
     // system("pause");
     return 0;
 }
 
+/*1– Faça um programa que recebe dois valores e apresente na tela a soma, a subtração e
+multiplicação e a divisão desses dois valores.*/
 void ex1()
 {
+    printf("Exercicio 1:\n");
+
     float num1, num2;
 
-    printf("Digite o primeiro numero:");
+    printf("Digite o primeiro numero: ");
     scanf("%f", &num1);
-    printf("Digite o segundo numero:");
+    printf("Digite o segundo numero: ");
     scanf("%f", &num2);
     printf("Soma: %.2f\n Subtracao: %.2f\n Multiplicacao: %.2f\n Divisao: %.2f\n", num1 + num2, num1 - num2, num1 * num2, num1 / num2);
 }
 
+/*2 c2ex18) – Escreva um programa que solicite ao usuário a altura e o raio de um
+cilindro circular e imprima seu volume. Use a fórmula:
+Volume de um cilindro = 3,141592 * raio * raio * altura*/
 void ex2()
 {
+    printf("\nExercicio 2:\n");
+
+    float altura, raio;
+
+    printf("Digite a altura do cilindro: ");
+    scanf("%f", &altura);
+    printf("Digite a medida do raio da base do cilindro: ");
+    scanf("%f", &raio);
+    printf("\n O volume do cilindro é de: %.2fcm^3", altura * (pow(raio, 2) * M_PI));
     
 }
 void ex3() {}
@@ -36,11 +52,7 @@ void ex9() {}
 void ex10() {}
 void ex11() {}
 
-/*1– Faça um programa que recebe dois valores e apresente na tela a soma, a subtração e
-multiplicação e a divisão desses dois valores.
-2 c2ex18) – Escreva um programa que solicite ao usuário a altura e o raio de um
-cilindro circular e imprima seu volume. Use a fórmula:
-Volume de um cilindro = 3,141592 * raio * raio * altura
+/*
 3 – Escreva um programa que receba uma medida em metros e retorne essa quantidade
 em centímetros.
 4 – Escreva um programa que receba uma medida em centímetros e retorne essa
