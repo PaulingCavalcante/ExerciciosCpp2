@@ -6,7 +6,8 @@ void ex1(), ex2(), ex3(), ex4(), ex5(), ex6(), ex7(), ex8(), ex9(), ex10(), ex11
 
 int main()
 {
-    ex1(), ex2(), ex3(), ex4(), ex5(), ex6(), ex7(), ex8(), ex9(), ex10(), ex11();
+    // ex1(), ex2(),
+    ex3(), ex4(), ex5(), ex6(), ex7(), ex8(), ex9(), ex10(), ex11();
     // system("pause");
     return 0;
 }
@@ -39,8 +40,7 @@ void ex2()
     scanf("%f", &altura);
     printf("Digite a medida do raio da base do cilindro: ");
     scanf("%f", &raio);
-    printf("\n O volume do cilindro é de: %.2fcm^3", altura * (pow(raio, 2) * M_PI));
-    
+    printf("\n O volume do cilindro eh de: %.2fcm^3", altura * (pow(raio, 2) * M_PI));
 }
 void ex3() {}
 void ex4() {}
