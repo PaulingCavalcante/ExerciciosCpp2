@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <iostream>
 #include <math.h>
+#include <locale.h>
 
 void ex1(), ex2(), ex3(), ex4(), ex5(), ex6(), ex7(), ex8(), ex9(), ex10(), ex11();
 
 int main()
 {
+    setlocale(LC_ALL, "Portuguese");
     // ex1(), ex2(),
     ex3(), ex4(), ex5(), ex6(), ex7(), ex8(), ex9(), ex10(), ex11();
     // system("pause");
@@ -16,15 +18,15 @@ int main()
 multiplicação e a divisão desses dois valores.*/
 void ex1()
 {
-    printf("Exercicio 1:\n");
+    printf("Exercício 1:\n");
 
     float num1, num2;
 
-    printf("Digite o primeiro numero: ");
+    printf("Digite o primeiro número: ");
     scanf("%f", &num1);
-    printf("Digite o segundo numero: ");
+    printf("Digite o segundo número: ");
     scanf("%f", &num2);
-    printf("Soma: %.2f\n Subtracao: %.2f\n Multiplicacao: %.2f\n Divisao: %.2f\n", num1 + num2, num1 - num2, num1 * num2, num1 / num2);
+    printf("Soma: %.2f\n Subtração: %.2f\n Multiplicação: %.2f\n Divisão: %.2f\n", num1 + num2, num1 - num2, num1 * num2, num1 / num2);
 }
 
 /*2 c2ex18) – Escreva um programa que solicite ao usuário a altura e o raio de um
@@ -32,24 +34,36 @@ cilindro circular e imprima seu volume. Use a fórmula:
 Volume de um cilindro = 3,141592 * raio * raio * altura*/
 void ex2()
 {
-    printf("\nExercicio 2:\n");
+    printf("\nExercício 2:\n");
 
     float altura, raio;
 
-    printf("Digite a altura do cilindro: ");
+    printf("Digite a altura do cilíndro: ");
     scanf("%f", &altura);
-    printf("Digite a medida do raio da base do cilindro: ");
+    printf("Digite a medida do raio da base do cilíndro: ");
     scanf("%f", &raio);
-    printf("\n O volume do cilindro eh de: %.2fcm^3", altura * (pow(raio, 2) * M_PI));
+    printf("\n O volume do cilíndro é de: %.2fcm^3", altura * (pow(raio, 2) * M_PI));
 }
 
 /*3 – Escreva um programa que receba uma medida em metros e retorne essa quantidade
 em centímetros.*/
-void ex3() {}
+void ex3()
+{
+    printf("\nExercício 3:\n");
+
+    float metros;
+
+    printf("Digite uma medida em metros: ");
+    scanf("%f", &metros);
+    printf("Equivale a %.2f centimetros", metros * 100);
+}
 
 /*4 – Escreva um programa que receba uma medida em centímetros e retorne essa
 quantidade em metros.*/
-void ex4() {}
+void ex4()
+{
+    
+}
 
 /*5 – Escreva um programa que receba 5 valores e retorne a média entre eles.*/
 void ex5() {}
