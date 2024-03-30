@@ -11,7 +11,8 @@ int main()
     // ex1(), ex2(),
     // ex3(), ex4(),
     // ex5(),
-    ex6(), ex7(), ex8(), ex9(), ex10(), ex11();
+    // ex6(),
+    ex7(), ex8(), ex9(), ex10(), ex11();
     // system("pause");
     return 0;
 }
@@ -108,7 +109,18 @@ void ex6()
 partes de zinco, ou seja, 70% do peso de latão é formado por cobre e 30% de zinco.
 Escreva um programa que receba o valor em kgs de quanto de latão deve ser produzido,
 e o programa deve indicar quantos kgs de cobre e zinco serão necessários.*/
-void ex7() {}
+void ex7()
+{
+    float kgLatao, kgCobre, kgZinco;
+
+    printf("\nExercício 7:");
+
+    printf("\nDigite a quantidade de quilos de latão que será produzido: ");
+    scanf("%f", &kgLatao);
+    kgCobre = kgLatao * 0.7;
+    kgZinco = kgLatao * 0.3;
+    printf("\nPara produzir %.2fKg de Latão, são necessários:\n- %.2fKg de Cobre. \n- %.2fKg de zinco.", kgLatao, kgCobre, kgZinco);
+}
 
 /*8 (c2ex23) ? Um trabalhador recebe R$ 100,00 por dia trabalhado. Ao receber, são
 descontados 8% de impostos. Escreva um programa que receba o número de dias
