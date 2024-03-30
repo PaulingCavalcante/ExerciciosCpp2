@@ -12,7 +12,8 @@ int main()
     // ex3(), ex4(),
     // ex5(),
     // ex6(),
-    ex7(), ex8(), ex9(), ex10(), ex11();
+    // ex7(),
+    ex8(), ex9(), ex10(), ex11();
     // system("pause");
     return 0;
 }
@@ -125,7 +126,20 @@ void ex7()
 /*8 (c2ex23) ? Um trabalhador recebe R$ 100,00 por dia trabalhado. Ao receber, são
 descontados 8% de impostos. Escreva um programa que receba o número de dias
 trabalhados e informe o quanto deve ser pago ao trabalhador.*/
-void ex8() {}
+void ex8()
+{
+    int diasTrabalhados;
+    float salarioDiaria = 100.00, impostos = 0.08, salarioFinal;
+
+    printf("\nExercício 8: ");
+
+    printf("\nInsira os dias trabalhados: ");
+    scanf("%d", &diasTrabalhados);
+    salarioFinal = salarioDiaria * diasTrabalhados;
+    impostos *= salarioFinal;
+    salarioFinal -= impostos;
+    printf("\nDeve ser pago ao trabalhador um salário de: R$%.2f", salarioFinal);
+}
 
 /*9 ? Sabe-se que o preço de um piso é de R$ 7,00 o m2 e que cada peça possui 0,25 m2.
 Escreva um programa que receba uma área (em metros quadrados) e retorne quantas
