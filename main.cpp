@@ -20,9 +20,9 @@ int main()
 multiplicação e a divisão desses dois valores.*/
 void ex1()
 {
-    printf("Exercício 1:\n");
-
     float num1, num2;
+
+    printf("Exercício 1:\n");
 
     printf("Digite o 1º número: ");
     scanf("%f", &num1);
@@ -36,9 +36,9 @@ cilindro circular e imprima seu volume. Use a fórmula:
 Volume de um cilindro = 3,141592 * raio * raio * altura*/
 void ex2()
 {
-    printf("\nExercício 2:\n");
-
     float altura, raio;
+
+    printf("\nExercício 2:\n");
 
     printf("Digite a altura do cilíndro: ");
     scanf("%f", &altura);
@@ -51,9 +51,9 @@ void ex2()
 em centímetros.*/
 void ex3()
 {
-    printf("\nExercício 3:\n");
-
     float metros;
+
+    printf("\nExercício 3:\n");
 
     printf("Digite uma medida em metros: ");
     scanf("%f", &metros);
@@ -64,9 +64,9 @@ void ex3()
 quantidade em metros.*/
 void ex4()
 {
-    printf("\nExercício 4:\n");
-
     float centimetros;
+
+    printf("\nExercício 4:\n");
 
     printf("Digite uma medida em centimetros: ");
     scanf("%f", &centimetros);
@@ -76,10 +76,10 @@ void ex4()
 /*5 ? Escreva um programa que receba 5 valores e retorne a média entre eles.*/
 void ex5()
 {
-    printf("\nExercício 5:");
-
     int quantidadeNotas = 5;
     float numeros[quantidadeNotas], media = 0;
+
+    printf("\nExercício 5:");
 
     for (int contador = 0; contador < quantidadeNotas; contador++)
     {
@@ -92,7 +92,17 @@ void ex5()
 
 /*6 ? Escreva um programa que leia o preço de uma refeição e retorne o valor dos 10% da
 conta.*/
-void ex6() {}
+void ex6()
+{
+    float preco, taxa;
+
+    printf("\nExercício 6:");
+
+    printf("\nDigite o preço da refeição: ");
+    scanf("%f", &preco);
+    taxa = preco * 0.10;
+    printf("\n A taxa é de: R$%.2f\n Somando, o valor final é: R$%.2f", taxa, taxa + preco);
+}
 
 /*7 (c2ex22) ? Sabe-se que o latão é obtido por uma mistura de 7 partes de cobre e 3
 partes de zinco, ou seja, 70% do peso de latão é formado por cobre e 30% de zinco.
