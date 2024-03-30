@@ -14,7 +14,8 @@ int main()
     // ex6(),
     // ex7(),
     // ex8(), ex9(),
-    ex10(), ex11();
+    ex10(); //, ex11()
+
     // system("pause");
     return 0;
 }
@@ -156,6 +157,21 @@ e o percentual que ganha sobre o total de vendas. O programa deve calcular o sal
 total do vendedor e apresentar na tela a identificação do vendedor e o seu salário total.*/
 void ex10()
 {
+    int identificacao;
+    float salarioFixo, porcentualGanho, totalVendas;
+
+    printf("\nExercício 11:");
+
+    printf("\nDigite o ID do vendedor: ");
+    scanf("%d", &identificacao);
+    printf("\nDigite o salário fixo do vendedor: ");
+    scanf("%f", &salarioFixo);
+    printf("\nDigite o total arrecadado com as vendas: ");
+    scanf("%f", &totalVendas);
+    printf("\nDigite o percentual de ganhos sobre as vendas: ");
+    scanf("%f", &porcentualGanho);
+    float salarioTotal = salarioFixo + (totalVendas * (porcentualGanho / 100));
+    printf("\nA identifcação do vendedor é: %d\nSeu salário total foi R$%.2f", identificacao, salarioTotal);
 }
 
 /*11 - Escreva um programa que receba três números inteiros e positivos (A, B, C) e
@@ -166,6 +182,7 @@ void ex11()
 {
     int numeroA, numeroB, numeroC, expressaoR, expressaoS;
     float expressaoD;
+
     printf("\nExercício 11:");
 
     while (true)
