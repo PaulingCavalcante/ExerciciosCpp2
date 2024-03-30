@@ -13,7 +13,8 @@ int main()
     // ex5(),
     // ex6(),
     // ex7(),
-    ex8(), ex9(), ex10(), ex11();
+    // ex8(), ex9(),
+    ex10(), ex11();
     // system("pause");
     return 0;
 }
@@ -144,18 +145,63 @@ void ex8()
 /*9 ? Sabe-se que o preço de um piso é de R$ 7,00 o m2 e que cada peça possui 0,25 m2.
 Escreva um programa que receba uma área (em metros quadrados) e retorne quantas
 peças serão necessárias e o valor total.*/
-void ex9() {}
+void ex9()
+{
+    // float precoPiso = 7.00, ;
+}
 
 /*10 - Escrever um programa que lê a identificação de um vendedor (a identificação pode
 ser um número inteiro qualquer), o seu salário fixo, o total das vendas por ele efetuadas
 e o percentual que ganha sobre o total de vendas. O programa deve calcular o salário
 total do vendedor e apresentar na tela a identificação do vendedor e o seu salário total.*/
-void ex10() {}
+void ex10()
+{
+}
 
 /*11 - Escreva um programa que receba três números inteiros e positivos (A, B, C) e
 calcule a seguinte expressão:
 D = (R + S) / 2
-Sendo R = (A + B)2 e S = (B + C) 2
-.
-Dica: para o cálculo do quadrado, neste momento, use x * x*/
-void ex11() {}
+Sendo R = (A + B)2 e S = (B + C) 2*/
+void ex11()
+{
+    int numeroA, numeroB, numeroC, expressaoR, expressaoS;
+    float expressaoD;
+    printf("\nExercício 11:");
+
+    while (true)
+    {
+        printf("\nDigite o número A: ");
+        scanf("%d", &numeroA);
+
+        if (numeroA >= 0)
+            break;
+        else
+            printf("Valor inválido, digite um número inteiro positivo!");
+    }
+    while (true)
+    {
+        printf("\nDigite o número B: ");
+        scanf("%d", &numeroB);
+
+        if (numeroB >= 0)
+            break;
+        else
+            printf("Valor inválido, digite um número inteiro positivo!\n");
+    }
+    while (true)
+    {
+        printf("\nDigite o número C: ");
+        scanf("%d", &numeroC);
+
+        if (numeroC >= 0)
+            break;
+        else
+            printf("Valor inválido, digite um número inteiro positivo!\n");
+    }
+
+    expressaoR = pow((numeroA + numeroB), 2);
+    expressaoS = pow((numeroB + numeroC), 2);
+    expressaoD = (expressaoR + expressaoS) / 2.0;
+
+    printf("\nO resultado da expressao é: %.2f", expressaoD);
+}
