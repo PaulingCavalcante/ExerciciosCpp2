@@ -55,14 +55,20 @@ void ex3()
 
     printf("Digite uma medida em metros: ");
     scanf("%f", &metros);
-    printf("Equivale a %.2f centimetros", metros * 100);
+    printf("Equivale a %.2f centímetros", metros * 100);
 }
 
 /*4 – Escreva um programa que receba uma medida em centímetros e retorne essa
 quantidade em metros.*/
 void ex4()
 {
-    
+    printf("\nExercício 4:\n");
+
+    float centimetros;
+
+    printf("Digite uma medida em centimetros: ");
+    scanf("%f", &centimetros);
+    printf("Equivale a %.2f metros", centimetros / 100);
 }
 
 /*5 – Escreva um programa que receba 5 valores e retorne a média entre eles.*/
