@@ -148,7 +148,11 @@ Escreva um programa que receba uma área (em metros quadrados) e retorne quantas
 peças serão necessárias e o valor total.*/
 void ex9()
 {
-    // float precoPiso = 7.00, ;
+    float precoPiso = 7.00, tamanho1Piso = 0.25, area, valorTotal;
+    int quantidadePecas;
+
+    printf("\nExercícios 9:");
+
 }
 
 /*10 - Escrever um programa que lê a identificação de um vendedor (a identificação pode
@@ -160,7 +164,7 @@ void ex10()
     int identificacao;
     float salarioFixo, porcentualGanho, totalVendas;
 
-    printf("\nExercício 11:");
+    printf("\nExercício 10:");
 
     printf("\nDigite o ID do vendedor: ");
     scanf("%d", &identificacao);
