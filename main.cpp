@@ -13,8 +13,9 @@ int main()
     // ex5(),
     // ex6(),
     // ex7(),
-    // ex8(), ex9(),
-    ex10(); //, ex11()
+    // ex8(),
+    ex9();
+    // ex10(); //, ex11()
 
     // system("pause");
     return 0;
@@ -148,11 +149,19 @@ Escreva um programa que receba uma área (em metros quadrados) e retorne quantas
 peças serão necessárias e o valor total.*/
 void ex9()
 {
-    float precoPiso = 7.00, tamanho1Piso = 0.25, area, valorTotal;
-    int quantidadePecas;
+    while (true)
+    {
+        float precoPiso = 7.00, area, valorTotal, tamanhoPiso = 0.25;
+        int quantidadePecas;
 
-    printf("\nExercícios 9:");
+        printf("\nExercícios 9:");
 
+        printf("\nQual é a área do  piso? (Em metros quadrados): ");
+        scanf("%f", &area);
+        quantidadePecas = ceil(area);
+        printf("\nSerão necessários comprar %d pisos para cobrir %.2fm^2.", quantidadePecas * 4, area);
+        printf("\nO valor total será de RS%.2f.", quantidadePecas * precoPiso);
+    }
 }
 
 /*10 - Escrever um programa que lê a identificação de um vendedor (a identificação pode
